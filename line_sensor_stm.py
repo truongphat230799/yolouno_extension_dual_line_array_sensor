@@ -2,7 +2,7 @@ from machine import Pin, I2C
 from utility import *
 from setting import *
 from micropython import const
-import stm32
+import stm32_line
 
 class LineSensor2:
     def __init__(self):
