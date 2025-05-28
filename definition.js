@@ -218,8 +218,8 @@ Blockly.Blocks['line_sensor2_init'] = {
 Blockly.Python["line_sensor2_init"] = function (block) {
   var scl_pin2 = block.getFieldValue('scl_pin2');
   var sda_pin2 = block.getFieldValue('sda_pin2');
-  Blockly.Python.definitions_['import_line_sensor1'] = 'from line_sensor_stm import *';
-  Blockly.Python.definitions_['create_line_sensor1'] = 'line_sensor2 = LineSensor2(scl_pin2 = ' + scl_pin2+ '_PIN, sda_pin2 = ' + sda_pin2 + '_PIN)';
+  Blockly.Python.definitions_['import_line_sensor2'] = 'from line_sensor_stm import *';
+  Blockly.Python.definitions_['create_line_sensor2'] = 'line_sensor2 = LineSensor2(scl_pin2 = ' + scl_pin2+ '_PIN, sda_pin2 = ' + sda_pin2 + '_PIN)';
   
   // TODO: Assemble Python into code variable.
   var code = "";

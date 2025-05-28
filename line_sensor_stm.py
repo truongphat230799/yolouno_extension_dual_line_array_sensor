@@ -3,7 +3,6 @@ from utility import *
 from setting import *
 from micropython import const
 import stm32
-from constants import *
 
 class LineSensor2:
     def __init__(self):

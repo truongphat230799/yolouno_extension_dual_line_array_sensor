@@ -3,7 +3,6 @@ from utility import *
 from setting import *
 from micropython import const
 import pcf8574
-from constants import *
 
 class LineSensor:
     def __init__(self):
