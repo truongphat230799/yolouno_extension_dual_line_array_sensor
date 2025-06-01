@@ -355,7 +355,7 @@ Blockly.Python["line_sensor2_read_all"] = function (block) {
   var S3 = block.getFieldValue("S3");
   var S4 = block.getFieldValue("S4");
   // TODO: Assemble Python into code variable.
-  var code = "line_sensor2.read() == (" + S1 + ", " + S2 + ", " + S3 + ", " + S4 + ")";
+  var code = "line_sensor2.read_ss2() == (" + S1 + ", " + S2 + ", " + S3 + ", " + S4 + ")";
   return [code, Blockly.Python.ORDER_NONE];
 };
 
@@ -398,6 +398,6 @@ Blockly.Blocks['line_sensor2_read_single'] = {
 Blockly.Python["line_sensor2_read_single"] = function (block) {
   var pin = block.getFieldValue("pin");
   // TODO: Assemble Python into code variable.
-  var code = "line_sensor2.read(" + pin + ")";
+  var code = "line_sensor2.read_ss2(" + pin + ")";
   return [code, Blockly.Python.ORDER_NONE];
 };
