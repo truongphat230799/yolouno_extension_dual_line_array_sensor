@@ -26,7 +26,7 @@ class LineSensor2:
         return 0
 
 
-class LineSensor2(LineSensor2):
+class LineSensorI2C2(LineSensor2):
     def __init__(self, scl_pin2, sda_pin2, address=0x23):
         self.scl2 = scl_pin2
         self.sda2 = sda_pin2
@@ -35,7 +35,7 @@ class LineSensor2(LineSensor2):
         self.address = address
 
         try:
-            self.stm = stm32.STM32(self.i2c_stm, self.address)
+            self.stm = stm32_line.STM32(self.i2c_stm, self.address)
         except:
             self.stm = None
             print('Line sensor not found')

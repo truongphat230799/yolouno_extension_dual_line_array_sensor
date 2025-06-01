@@ -157,10 +157,10 @@ Blockly.Blocks['line_sensor_read_single'] = {
             "type": "field_dropdown",
             "name": "pin",
             "options": [
-              ["S1", "1"],
-              ["S2", "2"],
-              ["S3", "3"],
-              ["S4", "4"],
+              ["S1", "0"],
+              ["S2", "1"],
+              ["S3", "2"],
+              ["S4", "3"],
             ],
           },
         ],
@@ -219,7 +219,7 @@ Blockly.Python["line_sensor2_init"] = function (block) {
   var scl_pin2 = block.getFieldValue('scl_pin2');
   var sda_pin2 = block.getFieldValue('sda_pin2');
   Blockly.Python.definitions_['import_line_sensor2'] = 'from line_sensor_stm import *';
-  Blockly.Python.definitions_['create_line_sensor2'] = 'line_sensor2 = LineSensor2(scl_pin2 = ' + scl_pin2+ '_PIN, sda_pin2 = ' + sda_pin2 + '_PIN)';
+  Blockly.Python.definitions_['create_line_sensor2'] = 'line_sensor2 = LineSensorI2C2(scl_pin2 = ' + scl_pin2+ '_PIN, sda_pin2 = ' + sda_pin2 + '_PIN)';
   
   // TODO: Assemble Python into code variable.
   var code = "";
@@ -379,10 +379,10 @@ Blockly.Blocks['line_sensor2_read_single'] = {
             "type": "field_dropdown",
             "name": "pin",
             "options": [
-              ["S1", "1"],
-              ["S2", "2"],
-              ["S3", "3"],
-              ["S4", "4"],
+              ["S1", "0"],
+              ["S2", "1"],
+              ["S3", "2"],
+              ["S4", "3"],
             ],
           },
         ],
